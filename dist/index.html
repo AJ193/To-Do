@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/105bcdf182.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>ToDo List</title>
+<script defer src="app.js"></script></head>
+<body id="body">
+    <div class="mainContainer">
+        <div class="listHeader">
+            <div class="listHeaderTop">
+                <p class="listHeaderText">Daily Routine</p>
+                <i id="refresh" class="fas fa-sync"></i>
+            </div>
+            <div class="listHeaderBottom">
+                <input id="text" type="text" class="text" placeholder="Add to your list...">
+                <i id="addIcon" class="fas fa-plus addIcon"></i>
+            </div>
+        </div>
+        <ul class="list" id="list">
+           
+        </ul>
+        <div class="listFooter">
+            <p id="removeAll" class="clear">
+                Clear All Completed!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

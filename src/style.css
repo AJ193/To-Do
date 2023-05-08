@@ -1,0 +1,205 @@
+:root {
+  --color--white: rgb(255, 255, 255);
+  --color--light: rgb(245, 241, 241);
+  --color--gray: rgb(85, 85, 85);
+  --color--black: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.message {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: green;
+  width: 100%;
+}
+
+.messageText {
+  color: var(--color--white);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color--light);
+  width: 100%;
+}
+
+.listHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color--light);
+}
+
+.listHeaderText {
+  font-weight: 600;
+}
+
+.listHeaderTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  border-bottom: solid 1px var(--color--gray);
+}
+
+.addIcon:hover {
+  cursor: pointer;
+}
+
+.listHeaderBottom {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid 1px var(--color--gray);
+}
+
+.text {
+  height: 100%;
+  width: 100%;
+  padding: 15px 20px;
+  margin-right: 20px;
+  border: none;
+  background-color: var(--color--light);
+}
+
+.listItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  padding-left: 10px;
+  padding-right: 1px;
+  width: 100%;
+  border-bottom: solid 1px var(--color--gray);
+}
+
+.check {
+  flex: 1;
+}
+
+.todo {
+  flex: 10;
+}
+
+.listItemIcon {
+  flex: 1;
+}
+
+.listItemIcon:hover {
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100px;
+  flex: 3;
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
+.menuClose {
+  font-size: 18px;
+  color: limegreen;
+  position: absolute;
+  top: -19px;
+  right: -18px;
+}
+
+.menuItem {
+  color: var(--color--white);
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.deleteItem {
+  background-color: crimson;
+}
+
+.editItem {
+  background-color: green;
+}
+
+.listFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--color--light);
+}
+
+.clear {
+  color: var(--color--gray);
+  transition: all 0.3s;
+}
+
+.clear:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.editInput {
+  height: 100%;
+  width: 100%;
+  padding: 5px 20px;
+  border: none;
+  background-color: var(--color--light);
+  flex: 7;
+}
+
+.editInput:focus {
+  outline: none;
+}
+
+.menuOk {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.menuOk:hover {
+  cursor: pointer;
+}
